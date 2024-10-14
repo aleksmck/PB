@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peanut Butter Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <h1>Order Your Favorite Peanut Butter!</h1>
+            <p>Choose Crunchy or Smooth, and get your PB fix today.</p>
+            <ul class="nav-links">
+                <li><a href="#product-selection">Product Selection</a></li>
+                <li><a href="#order-summary">Order Summary</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section id="product-selection" class="form-section">
+        <h2>Select Your Peanut Butter</h2>
+        <form id="pb-order-form">
+            <!-- User Details -->
+            <div class="user-details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Product Selection -->
+            <div class="product-options">
+                <!-- Crunchy Peanut Butter -->
+                <div class="product-box" id="crunchy-box">
+                    <img src="crunchy.jpg" alt="Crunchy Peanut Butter">
+                    <h3>Crunchy</h3>
+                    <div class="counter">
+                        <button type="button" class="decrease">-</button>
+                        <input type="number" id="crunchy-count" name="crunchy-count" value="0" min="0">
+                        <button type="button" class="increase">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Smooth Peanut Butter -->
+                <div class="product-box" id="smooth-box">
+                    <img src="smooth.jpg" alt="Smooth Peanut Butter">
+                    <h3>Smooth</h3>
+                    <div class="counter">
+                        <button type="button" class="decrease">-</button>
+                        <input type="number" id="smooth-count" name="smooth-count" value="0" min="0">
+                        <button type="button" class="increase">+</button>
+                    </div>
+                    <button type="button" class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Order Summary Section -->
+    <section id="order-summary" class="order-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-details">
+            <p>Total Crunchy Jars: <span id="total-crunchy">0</span></p>
+            <p>Total Smooth Jars: <span id="total-smooth">0</span></p>
+            <p>Total Jars: <span id="total-jars">0</span></p>
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+            <label for="promo-code">Promo Code:</label>
+            <input type="text" id="promo-code" name="promo-code">
+        </div>
+        <button type="submit" id="place-order">Place Order</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Thank you for your order! We appreciate your support.</p>
+        <div class="contact-info">
+            <p>Contact us at: <a href="mailto:contact@pbstore.com">contact@pbstore.com</a></p>
+            <div class="social-media">
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+            <div id="map">
+                <!-- Embedded Map Placeholder -->
+                <p>[Map of our location]</p>
+            </div>
+        </div>
+        <div class="newsletter">
+            <label for="newsletter-signup">Subscribe for updates:</label>
+            <input type="email" id="newsletter-signup" name="newsletter-signup">
+            <button type="button">Subscribe</button>
+        </div>
+    </footer>
+</body>
+</html>
