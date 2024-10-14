@@ -8,46 +8,15 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #ffab40;
-    padding: 20px;
+/* Header Section */
+h1 {
     text-align: center;
-}
-
-.navbar h1 {
-    margin: 0;
-    color: #fff;
-}
-
-.navbar p {
-    color: #fff;
-    margin: 5px 0;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    text-decoration: underline;
+    color: #00796b;
+    margin-top: 40px;
 }
 
 /* Form Section */
@@ -106,70 +75,13 @@ h1, h2, h3 {
     border-radius: 15px;
 }
 
-.counter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.price {
+    font-size: 18px;
+    color: #00796b;
     margin-top: 10px;
 }
 
-.decrease, .increase {
-    padding: 10px;
-    border: none;
-    background-color: #ff7043;
-    color: #fff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-input[type="number"] {
-    text-align: center;
-    width: 60px;
-    padding: 10px;
-    margin: 0 10px;
-    border: 2px solid #ff7043;
-    border-radius: 10px;
-}
-
-.add-to-cart {
-    background-color: #ff7043;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart:hover {
-    background-color: #f4511e;
-}
-
-/* Order Summary Section */
-.order-summary {
-    background: #b2dfdb;
-    padding: 40px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.order-summary h2 {
-    color: #004d40;
-}
-
-.summary-details p {
-    margin: 10px 0;
-    color: #004d40;
-}
-
-#promo-code {
-    padding: 10px;
-    border: 2px solid #004d40;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
+/* Send Button */
 #place-order {
     background-color: #004d40;
     color: #fff;
@@ -183,49 +95,4 @@ input[type="number"] {
 
 #place-order:hover {
     background-color: #00332a;
-}
-
-/* Footer Section */
-footer {
-    background-color: #00796b;
-    color: #fff;
-    padding: 30px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.contact-info a {
-    color: #ffab40;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.social-media a {
-    color: #fff;
-    margin: 0 5px;
-}
-
-#newsletter-signup {
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    border: none;
-    width: 200px;
-}
-
-.newsletter button {
-    padding: 10px;
-    border: none;
-    background-color: #ffab40;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.newsletter button:hover {
-    background-color: #ff8a00;
 }
